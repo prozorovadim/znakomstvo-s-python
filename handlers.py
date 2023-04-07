@@ -17,7 +17,7 @@ async def send_welcome(message: Message):
     await message.reply("Привет!\nЯ бот Вадима Викторовича!\nЯ очень крут, как и мой создатель. Нажми на кнопки внизу.", reply_markup=keyboard)
 @dp.message_handler(commands=['играть'])
 async def mes_start(message: Message):
-    await message.answer(text=f'привет! {message.from_user.first_name} \n Сегодня мы с тобой поиграем в интересную игру')
+    await message.answer(text=f'привет! {message.from_user.first_name} \nСегодня мы с тобой поиграем в интересную игру! Жми кнопку "new"')
 
 
 @dp.message_handler(commands='new')
